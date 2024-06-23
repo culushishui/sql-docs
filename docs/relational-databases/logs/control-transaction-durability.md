@@ -147,10 +147,10 @@ COMMIT [ { TRAN | TRANSACTION } ] [ transaction_name | @tran_name_variable ] ] [
 ```
 
  **OFF**  
- [default] The transaction COMMIT is fully durable, unless the database option DELAYED_DURABLITY = FORCED is in effect, in which case the COMMIT is asynchronous and thus delayed durable. For more information, see [Database level control](../../relational-databases/logs/control-transaction-durability.md#bkmk_DbControl).
+ [default] The transaction COMMIT is fully durable, unless the database option DELAYED_DURABLITY = FORCED is in effect, in which case the COMMIT is synchronous and thus fully durable. For more information, see [Database level control](../../relational-databases/logs/control-transaction-durability.md#bkmk_DbControl).
 
  **ON**  
- The transaction COMMIT is delayed durable, unless the database option DELAYED_DURABLITY = DISABLED is in effect, in which case the COMMIT is synchronous and thus fully durable. For more information, see [Database level control](../../relational-databases/logs/control-transaction-durability.md#bkmk_DbControl).
+ The transaction COMMIT is delayed durable, unless the database option DELAYED_DURABLITY = DISABLED is in effect, in which case the COMMIT is asynchronous and thus delayed durable. For more information, see [Database level control](../../relational-databases/logs/control-transaction-durability.md#bkmk_DbControl).
 
 ### Summary of options and their interactions
 
